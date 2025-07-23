@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Мягкое Исцеление Суставов</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: #fff8f2;
+      color: #2e2e2e;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #5c1ca4;
+    }
+    .section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .highlight {
+      color: #b30086;
+      font-weight: bold;
+    }
+    .button {
+      background: #7c3aed;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .energies {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .energy {
+      background: #f4edff;
+      border-left: 6px solid #7c3aed;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .energy h3 {
+      margin: 0 0 5px 0;
+      color: #4b0082;
+    }
+    .who {
+      background: linear-gradient(to right, #f0f8ff, #e6ffe6);
+      border-radius: 12px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 30px;
+    }
+    .who div::before {
+      content: "🌿 ";
+    }
+    form {
+      margin-top: 30px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>💜 Формат курса</h2>
+    <div class="section">
+      <p>🔹 21 энергетический сеанс</p>
+      <p>🔹 С понедельника по пятницу (выходные — отдых)</p>
+      <p>🔹 Энергии приходят до востребования — в тишине и доверии</p>
+      <p>🔹 Стоимость участия — <strong class="highlight">3000 рублей</strong></p>
+    </div>
+
+    <h2>✨ Энергии курса</h2>
+    <div class="section energies">
+      <div class="energy">
+        <h3>🌍 Энергия Земли</h3>
+        <p>Насыщает энергией стихий. Укрепляет кости, суставы, волосы. Омолаживает и восстанавливает физическое и эфирное тело. Помогает при астме, сколиозе, климаксе, атеросклерозе, ДЦП.</p>
+      </div>
+      <div class="energy">
+        <h3>💫 Вечная Жизнь</h3>
+        <p>Заполняет жизненной энергией, восстанавливает мозг, очищает позвоночник, лечит нервные волокна, даёт новый импульс жизни. Помогает при нарушениях нервной проводимости и ДЦП.</p>
+      </div>
+      <div class="energy">
+        <h3>🌀 Выравнивание позвоночника</h3>
+        <p>Работает с осью тела: позвоночником, тазом, стопами. Помогает при грыже, сколиозе, артрозе. Восстанавливает зрение, сосуды, уверенность. Закрывает энергетические оттоки.</p>
+      </div>
+    </div>
+
+    <h2>🔸 Кому подойдёт</h2>
+    <div class="section who">
+      <div>Усталость в теле, боли в спине</div>
+      <div>Нет энергии на повседневные дела</div>
+      <div>Нарушения сна и внутренний дисбаланс</div>
+      <div>Стресс, постоянное напряжение</div>
+      <div>Потеря опоры, страхи, тревожность</div>
+      <div>Нет ощущения устойчивости</div>
+      <div>Проблемы с суставами, позвоночником</div>
+      <div>Хочется бережно восстановиться</div>
+    </div>
+
+    <form action="https://formspree.io/f/xwqp1wnz" method="POST">
+      <h2>📩 Запись на курс</h2>
+      <input type="text" name="name" placeholder="Ваше имя" required />
+      <input type="email" name="email" placeholder="Ваш email" required />
+      <textarea name="message" placeholder="Комментарий или вопрос" rows="4"></textarea>
+      <button type="submit" class="button">Записаться на курс</button>
+    </form>
+  </div>
+</body>
+</html>
